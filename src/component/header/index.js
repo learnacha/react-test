@@ -6,13 +6,12 @@ const Header = props => {
     return (
         <header data-test="headerComponent">
             <div className="wrap">
-            <div className="logo">
-<img data-test="logoIMG" src={logo} alt="logo" />
+                <div className="logo">
+                    <img data-test="logoIMG" src={logo} alt="logo" />
+                </div>
             </div>
-            </div>
-            Header
         </header>
     )
-} ;
+};
 
 export default Header;
