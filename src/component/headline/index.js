@@ -29,7 +29,7 @@ Headline.propTypes = {
     header: PropTypes.string,
     desc: PropTypes.string,
     tempArr: PropTypes.arrayOf(PropTypes.shape({
-        fName: PropTypes.number,
+        fName: PropTypes.string,
         lName: PropTypes.string,
         email: PropTypes.string,
         age: PropTypes.number,
