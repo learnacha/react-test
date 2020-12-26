@@ -65,6 +65,11 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "CI=true npm test"
+    }
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -77,6 +82,7 @@
   "devDependencies": {
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
+    "husky": "^4.3.6",
     "jest": "^26.5.2",
     "jest-enzyme": "^7.1.2",
     "moxios": "^0.4.0"
