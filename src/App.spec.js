@@ -38,6 +38,21 @@ describe('App Component', () => {
     it('should render without errors', () => {
         const comp = findByTestAttr(wrapper, 'appComponent');
         expect(comp.length).toBe(1);
+    });
+
+    it('exampleMethod_updateState method shuld toggle', () => {
+        const cmpInstance = wrapper.instance();
+        cmpInstance.exampleMethod_updateState();
+        const newState = cmpInstance.state.hideBtn;
+        expect(newState).toBe(true);
     })
+
+    it('exampleMethod_returnsAValue should return incremeneted val', () => {
+        const cmpInstance = wrapper.instance();
+        const newVal = cmpInstance.exampleMethod_returnsAValue(1);
+        expect(newVal).toBe(2);
+    })
+
+    
 
 });
